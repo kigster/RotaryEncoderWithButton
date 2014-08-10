@@ -32,7 +32,8 @@ RotaryEncoderWithButton rotary(2,3,4);
 void setup() {
 	Serial.begin(9600);
 
-	// required to initials button pin, assumes built-in pull up resistor
+	// required to initialize the button pin, and the library
+	// assumes built-in pull up resistor is used
 	rotary.begin();
 }
 
