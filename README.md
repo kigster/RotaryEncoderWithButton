@@ -12,6 +12,15 @@ support for detecting and handling button press.  In this case we do not care ab
 clicking, which are all possible valid applications.  We are making the most simple obvious single button press
 really easy to use, which was my goal.
 
+## Dependencies
+
+ * [Encoder](http://www.pjrc.com/teensy/td_libs_Encoder.html)
+
+To run the example, also need
+
+ * [Simple Timer](https://github.com/infomaniac50/SimpleTimer)
+
+
 ## Example
 
 ```c++
