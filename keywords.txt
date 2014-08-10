@@ -1,0 +1,5 @@
+RotaryEncoderWithButton	KEYWORD1
+RotaryEncoderWithButton	KEYWORD2
+begin	KEYWORD2
+buttonClicked	KEYWORD2
+rotaryDelta	KEYWORD2
