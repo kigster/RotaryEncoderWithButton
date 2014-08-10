@@ -12,6 +12,13 @@ support for detecting and handling button press.  In this case we do not care ab
 clicking, which are all possible valid applications.  We are making the most simple obvious single button press
 really easy to use, which was my goal.
 
+## Wiring
+
+For the rotary, it should have 3 pins on the side.  Side pins are A and B, middle one is ground.
+
+For the button, right one is ground (if facing knob with 2 pins upfront), the other one is the input pin. Note that library
+enables pull up resistor on the input pin.
+
 ## Dependencies
 
  * [Encoder](http://www.pjrc.com/teensy/td_libs_Encoder.html)
