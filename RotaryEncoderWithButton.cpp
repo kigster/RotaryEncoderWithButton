@@ -15,13 +15,19 @@ RotaryEncoderWithButton::RotaryEncoderWithButton(
 		uint8_t buttonPin) {
 
 	_lastButtonPressedAt = 0;
+	_rotaryPinA = rotaryPinA;
+	_rotaryPinB = rotaryPinB;
 	_buttonPin = buttonPin;
 	_hasNotReadRotary = true;
 	encoder = new Encoder(rotaryPinA, rotaryPinB);
 }
 
 void RotaryEncoderWithButton::begin() {
+	pinMode(_rotaryPinA, INPUT);
+	pinMode(_rotaryPinB, INPUT);
 	pinMode(_buttonPin, INPUT);
+	digitalWrite(_rotaryPinA, HIGH);
+	digitalWrite(_rotaryPinB, HIGH);
 	digitalWrite(_buttonPin, HIGH);
 }
 

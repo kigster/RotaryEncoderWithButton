@@ -22,7 +22,8 @@
 #include <SimpleTimer.h>
 
 SimpleTimer timer(1);
-RotaryEncoderWithButton rotary(2,3,4);
+//RotaryEncoderWithButton rotary(2,3,4);
+RotaryEncoderWithButton rotary(A5,2,A4);
 
 const short elements = 2;
 blinkingLed led[elements];
@@ -77,8 +78,8 @@ void setup() {
 
 	rotary.begin();
 
-	led[0].pin = 13;
-	led[1].pin = 12;
+	led[0].pin = 7;
+	led[1].pin = 6;
 
 	printf("\n\nRotary Encoder Example\n");
 	printf("Connect leds to pins [%d] and [%d]\nClick to swap LEDs, turn knob to change frequency.\n",

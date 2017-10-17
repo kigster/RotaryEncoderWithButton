@@ -23,7 +23,7 @@
 
 #include <Encoder.h>
 
-#define DEBOUNCE_DELAY 		30
+#define DEBOUNCE_DELAY 		50
 
 // once you press the button, no other events to the button matter
 // until this time has passed.
@@ -38,7 +38,7 @@ public:
 
 	Encoder *encoder;
 private:
-	int _buttonPin;
+	uint8_t _rotaryPinA, _rotaryPinB, _buttonPin;
 	bool _hasNotReadRotary;
 	unsigned long int _lastButtonPressedAt;
 	signed long int _lastRotaryValue;
